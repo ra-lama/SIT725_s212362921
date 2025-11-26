@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Task 3.2P | SIT725 | s212362921</title>
+
+        <meta name="description" content="basic template for SIT 725 Prac 3">
+        <meta name="author" content="SitePoint">
+
+        <meta property="og:title" content="SIT725 Task 3.2P">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Basic template for SIT725 Task 3.2P">
+
+        <!-- CSS: Materialize and custom -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation bar start -->
+        <nav class="z-depth-0">
+            <div class="nav-wrapper navbar-size">
+
+                <!-- Logo -->
+                <a id="toggleBg" href="#" class="brand-logo"><img class="logo-fit" src="images/MoodlyLogo.png" title="Toggle light/dark theme!" alt="Toggle for light/dark theme" /></a>
+                
+                <!-- Hamburger menu line for smaller screens -->
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                
+                <ul class="right hide-on-med-and-down">
+                    <li><a target="_blank" href="https://www.abc.net.au/news/good-news">Good News</a></li>
+                    <li><a target="_blank" href="https://www.brainyquote.com/topics/positive-quotes">Inspiration</a></li>
+                    <li><a target="_blank" href="https://www.headspace.com/">Headspace</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navigation bar end -->
+
+        <!-- Hamburger links for smaller screen (per Materialize doc, should not be inside <nav>) -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li><!-- index.html instead of # so that menu auto closes when clicked -->
+            <li><a target="_blank" href="https://www.abc.net.au/news/good-news">Good News</a></li>
+            <li><a target="_blank" href="https://www.brainyquote.com/topics/positive-quotes">Inspiration</a></li>
+            <li><a target="_blank" href="https://www.headspace.com/">Headspace</a></li>
+        </ul>
+        <!-- Smaller screens Hamburger nav start -->
+
+        <!-- Main start -->
+        <main class="main-body">
+            <div class="container">
+                
+                <!-- Row start: Header -->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h1 class="playwrite-gb-s-ft" id="heading">mood.ly</h1>
+                    </div>
+                </div>
+                <!-- Row end: Header -->
+
+                <!-- Row start: Prompt -->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h4 class="playwrite-gb-s-ft" id="heading">What's your current mood?</h4>
+                    </div>
+                 </div>
+                <!-- Row end: Prompt -->
+
+                <!-- Row start: Mood buttons -->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <p class="flow-text">Choose one of the three moods to produce a beautiful image:</p>
+                    </div>
+                    <div class="col xl4 s12 center-align">
+                        <a id="workBtn" class="waves-effect waves-orange btn click-me-button m-bottom-pad" id="clickMeButton"><i class="material-icons left">laptop</i>Work</a>
+                    </div>
+                    <div class="col xl4 s12 center-align">
+                        <a id="natureBtn" class="waves-effect waves-orange btn click-me-button m-bottom-pad" id="clickMeButton1"><i class="material-icons left">local_florist</i>Nature</a>
+                    </div>
+                    <div class="col xl4 s12 center-align">
+                        <a id="vacationBtn" class="waves-effect waves-orange btn click-me-button m-bottom-pad" id="clickMeButton2"><i class="material-icons left">local_airport</i>Vacation</a>
+                    </div>
+                </div>
+                <!-- Row start: Mood buttons -->
+
+                <!-- Random mood image -->
+                <div class="row">
+                    <div class="col hide-on-small-only m1">&nbsp;</div>
+                    <div class="col s12 m10 center-align"><img id="mood-img" class="img-fit" /></div>
+                    <div class="col hide-on-small-only m1">&nbsp;</div>
+                </div>
+
+            </div>
+        </main>
+        <!-- Main end -->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
