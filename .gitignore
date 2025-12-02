@@ -1,5 +1,6 @@
-node_modules/
 .DS_Store
+.env
+node_modules/
 Prac_3/
 Prac_4/
 MusicTrolley/
