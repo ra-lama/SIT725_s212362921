@@ -1,0 +1,72 @@
+/*
+ * REFERENCES
+ * Colours: https://www.w3schools.com/colors/colors_picker.asp
+ * Google Font: Playwrite GB S: https://fonts.google.com/specimen/Playwrite+GB+S
+ */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/*
+ * Google Font: Playwrite GB S: https://fonts.google.com/specimen/Playwrite+GB+S
+ */
+.playwrite-gb-s-ft {
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar-size {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav, .nav-wrapper, .brand-logo, .right {
+    margin: 0;
+    padding: 0;
+    background-color: #b3daff;
+}
+nav ul a:hover {
+    background-color: #e6f2ff;
+    color: #4da6ff;
+}
+.logo-fit {
+    width: 30px;
+    padding: 0px 0px 0px 0px;
+    object-fit: contain;
+}
+
+ .m-bottom-pad {
+    margin-bottom: 25px;
+ }
+
+.btn, .btn-large, .btn-small, .btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: rgba(128, 191, 255, 0.65);
+}
+.btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: rgba(179, 217, 255, 0.65);
+    color: #4da6ff;
+}
+.waves-effect.waves-brown .waves-ripple {
+    background-color: rgba(128, 191, 255, 0.65);
+}
+
+.img-fit {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media (min-width: 993px) {
+    .logo-fit {
+        padding: 0px 0px 0px 5px;
+    }
+}
+ @media (min-width: 1200px) {
+    .m-bottom-pad {
+        margin-bottom: 0px;
+    }
+}
